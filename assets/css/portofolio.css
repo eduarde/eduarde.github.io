@@ -1,0 +1,28 @@
+body {
+  min-height: 2000px;
+  padding-top: 150px;
+  background-image: url('../img/pattern.jpg');
+  overflow-x: hidden; 
+  overflow-y: hidden;
+
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+}
+
+.logo {
+	text-align: center !important;
+}
+
+@media (max-width: 600px) {
+
+  .logo img{
+    width: 150px;
+    height: 150px;
+  }
+
+  .logo h1{
+  	font-size: 30px;
+  }
+}
