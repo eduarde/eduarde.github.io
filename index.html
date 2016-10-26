@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>TypeScript</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Acme|Kaushan+Script|Lobster+Two" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="pos-f-t">
+      <div class="collapse" id="navbar-header">
+        <div class="container bg-inverse p-1">
+          <h3>Collapsed content</h3>
+          <p>Toggleable via the navbar brand.</p>
+        </div>
+      </div>
+      <nav class="navbar navbar-light navbar-static-top bg-faded">
+        <div class="container">
+          <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-expanded="false" aria-controls="exCollapsingNavbar2" aria-label="Toggle navigation"></button>
+          <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+            <a class="navbar-brand" href="#"><strong>ITLab</strong></a>       
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Begin page content -->
+    <div class="container">
+      	<br /><br />
+    	<div class="mt-1">
+        	<div class="title"><h1>TypeScript</h1></div>
+      	</div>
+      	<br /><br />
+      	<p class="lead"><em>TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.</em></p>
+      
+      	<br /><br /><br />
+      	<hr />
+
+      	<div class="row clearfix ">
+
+      		<div class="col-md-4">
+      			<div class="box-text">
+	            	<h3>
+	                    <span class="line">Starts and ends with</span>
+	                    <span class="line">JavaScript</span>
+	                </h3>
+	                <p>TypeScript starts from the same syntax and semantics that millions of JavaScript developers know today.
+	                Use existing JavaScript code, incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.
+	                </p>
+	                <p>TypeScript compiles to clean, simple JavaScript code which runs on any browser, in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer).</p>
+	            </div>
+        	</div>
+
+	        <div class="col-md-4">           
+	        	<div class="box-text middle-box">
+	                <h3>
+	                	<span class="line">Strong tools for</span>
+	                    <span class="line">large apps</span>
+	                </h3>
+	                <p>
+	                    Types enable JavaScript developers to use highly-productive development tools and practices like static checking and code refactoring when developing JavaScript applications.
+	                </p>
+	                <p>
+	                	Types are optional, and type inference allows a few type annotations to make a big difference to the static verification of your code. Types let you define interfaces between software components and gain insights into the behavior of existing JavaScript libraries.
+	                </p>
+	            </div>
+	        </div>
+
+	        <div class="col-md-4">
+	        	<div class="box-text">
+	            	<h3>
+	                	<span class="line">State of the art</span>
+	                    <span class="line">JavaScript</span>
+	                </h3>
+	                <p>TypeScript offers support for the latest and evolving JavaScript features, including those from ECMAScript 2015 and future proposals, like async functions and decorators, to help build robust components.</p>
+	                <p>These features are available at development time for high-confidence app development, but are compiled into simple JavaScript that targets ECMAScript 3 (or newer) environments.</p>
+	            </div>
+	        </div>
+ 		
+ 		</div>
+
+        <br /><br /><br />
+      	<hr />
+      	<br /><br /><br />
+
+
+
+      	<!-- Cards for injecting data from main.ts -->
+		<div class="card card-inverse card-primary text-xs-center">
+		<div class="card-header">
+    		<h4>Basic</h4>
+  		</div>
+		  <div class="card-block">
+		    <blockquote class="card-blockquote">
+		      <div id="content1"></div> 
+		    </blockquote>
+		  </div>
+		</div>
+
+		<div class="card card-inverse card-success text-xs-center">
+			<div class="card-header">
+    			<h4>Interface</h4>
+  			</div>	
+		  <div class="card-block">
+		    <blockquote class="card-blockquote">
+		      <div id="content2"></div>
+		    </blockquote>
+		  </div>
+		</div>
+
+
+		<div class="card card-inverse card-danger text-xs-center">
+		  <div class="card-block">
+		  	<div class="card-header">
+    			<h4>Class</h4>
+  			</div>	
+		    <blockquote class="card-blockquote">
+		      <div id="content3"></div>
+		    </blockquote>
+		  </div>
+		</div>
+
+		<div class="card card-inverse card-info text-xs-center">
+		  <div class="card-block">
+		  	<div class="card-header">
+    			<h4>Interface + Class</h4>
+  			</div>	
+		    <blockquote class="card-blockquote">
+		      <div id="content4"></div>
+		    </blockquote>
+		  </div>
+		</div>
+
+		<br /><br />
+		<hr />
+		<br />
+        <center><small><b>Credits:</b> http://www.typescriptlang.org </small></center>
+
+        <br /><br />
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">ITLab @2016 / Erja Eduard</span>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/basic.js"></script>
+    <script type="text/javascript" src="js/interface.js"></script>
+    <script type="text/javascript" src="js/class.js"></script>
+    <script type="text/javascript" src="js/interface-class.js"></script>
+
+
+  </body>
+</html>
