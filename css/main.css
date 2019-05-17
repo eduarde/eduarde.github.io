@@ -39,5 +39,38 @@
     display: inline-block;
     list-style: none;
     margin-right: 1.5rem;
-    font-size: 35px;
+    font-size: 45px;
+    /* font-size: 35px; */
 }
+
+
+
+
+@media screen and (max-width: 730px) {
+
+    .social ul li {
+        font-size: 35px;
+        margin-right: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .social ul li {
+        font-size: 35px;
+        margin-right: 0.8rem;
+    }
+
+}
+
+
+@media screen and (max-width: 360px) {
+
+    .social ul li {
+        font-size: 30px;
+        margin-right: 0.5rem;
+    }
+
+}
+
