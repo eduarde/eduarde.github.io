@@ -31,8 +31,9 @@
 }
 
 .social ul {
-    display: inline-flex;
+    display: inline-block;
 }
+
 
 .social ul li {
     display: inline-block;
