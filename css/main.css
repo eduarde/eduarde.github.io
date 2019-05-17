@@ -15,8 +15,8 @@
 
 .img-avatar {
     display: block;
-    width: 230px;
-    height: 230px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     margin: 40px auto;
 }
@@ -40,13 +40,19 @@
     list-style: none;
     margin-right: 1.5rem;
     font-size: 45px;
-    /* font-size: 35px; */
 }
 
 
 
 
 @media screen and (max-width: 730px) {
+
+    .img-avatar {
+        width: 230px;
+        height: 230px;
+       
+    }
+
 
     .social ul li {
         font-size: 35px;
