@@ -34,8 +34,7 @@
 
 .container-skills {
     margin: 0 auto;
-    /* width: 640px; */
-    width: 47vh;
+    width: 50%;
 }
 
 .field.is-grouped {
@@ -70,8 +69,7 @@
 
 
 
-
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 769px) {
 
     .img-avatar {
         width: 240px;
@@ -83,6 +81,11 @@
     .section-social ul li {
         font-size: 35px;
         margin-right: 0.8rem;
+    }
+
+    .container-skills {
+        margin: 0 auto;
+        width: 100%;
     }
 
 }
