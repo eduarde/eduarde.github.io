@@ -28,8 +28,22 @@
     margin: 40px auto;
 }
 
+.section-skills {
+    margin-top: 40px;
+}
 
-.social {
+.container-skills {
+    margin: 0 auto;
+    /* width: 640px; */
+    width: 47vh;
+}
+
+.field.is-grouped {
+    justify-content: center;
+}
+
+
+.section-social {
     margin-bottom: 2rem;
     margin-top: 40px;
     font-size: 1.5rem;
@@ -37,19 +51,20 @@
     color: #fbfbfb;   
 }
 
-.social ul {
+
+.section-social ul {
     display: inline-block;
 }
 
 
-.social ul li {
+.section-social ul li {
     display: inline-block;
     list-style: none;
     margin-right: 1.5rem;
     font-size: 45px;
 }
 
-.social ul li:hover {
+.section-social ul li:hover {
    color: rgb(2, 15, 26);
 }
 
@@ -59,13 +74,13 @@
 @media screen and (max-width: 730px) {
 
     .img-avatar {
-        width: 230px;
-        height: 230px;
+        width: 240px;
+        height: 240px;
        
     }
 
 
-    .social ul li {
+    .section-social ul li {
         font-size: 35px;
         margin-right: 0.8rem;
     }
@@ -74,7 +89,7 @@
 
 @media screen and (max-width: 600px) {
 
-    .social ul li {
+    .section-social ul li {
         font-size: 35px;
         margin-right: 0.8rem;
     }
@@ -84,7 +99,7 @@
 
 @media screen and (max-width: 360px) {
 
-    .social ul li {
+    .section-social ul li {
         font-size: 30px;
         margin-right: 0.5rem;
     }
