@@ -29,6 +29,15 @@
     margin: 40px auto;
 }
 
+
+.logo {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+    margin: 40px auto;
+}
+
 .section-skills {
     margin-top: 40px;
 }
