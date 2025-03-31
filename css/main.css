@@ -42,6 +42,10 @@
     background-color: #242833;
 }
 
+.grayscale {
+    filter: grayscale(100%);
+}
+
 /* Custom Animated Chevron Arrow Styles */
 .arrow-container {
     position: absolute;
