@@ -1,250 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="scroll-smooth" lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eduard Erja - Full Stack Dev</title>
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-T4BPKTC');</script>
-  <!-- End Google Tag Manager -->
-
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:400,700|Ubuntu+Mono:400,700"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <link rel="stylesheet" href="css/main.css">
+  <!-- Link to Google Fonts for funky font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T4BPKTC');</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    /* Custom Tailwind overrides or additional styles can go here */
+
+    .title {
+      color: #333333;
+      font-family: 'Lato', sans-serif;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 50px;
+      padding-bottom: 5px;
+      padding-top: 0px;
+      text-align: center;
+      text-transform: none;
+    }
+
+
+    .paragraph {
+      color: #a9a9a9;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      padding-bottom: 10px;
+      padding-top: 5px;
+      text-align: center;
+      text-transform: none;
+    }
+  </style>
 
 </head>
 
-<body>
+<body class="bg-white text-gray-800 font-sans">
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4BPKTC"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4BPKTC" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <main class="bio">
-
-    <section class="bd-index-fullscreen hero is-fullheight is-primary">
-
-
-      <div class="hero-body">
-        <div class="container has-text-centered">
-
-          <h1 class="title">Hi!</h1>
-          <p>
-            <img class="img-avatar" src="images/avatars/yellow-02.png" alt="Hey it's me!" />
-          </p>
-          
-          <p>My name is <strong>Eduard</strong>,</p>
-          <p>I’m a <strong>Senior Full Stack Developer</strong> based in Brasov, Romania.</p>
-
-          <div class="section-skills">
-            <div class="container-skills">
-              <!-- tags list -->
-              <div class="field is-grouped is-grouped-multiline is-flex-mobile">
-                
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-info">python</span>
-                    <span class="tag is-dark">4</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-success">django</span>
-                    <span class="tag is-dark">5</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-warning">html5</span>
-                    <span class="tag is-dark">4</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-light">css3</span>
-                    <span class="tag is-dark">4</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-danger">scss</span>
-                    <span class="tag is-dark">3</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-success">graphQL</span>
-                    <span class="tag is-dark">4</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-warning">rest</span>
-                    <span class="tag is-dark">4</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-info">docker</span>
-                    <span class="tag is-dark">3</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-success">sql / nosql</span>
-                    <span class="tag is-dark">5</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-warning">javascript</span>
-                    <span class="tag is-dark">3</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-danger">git</span>
-                    <span class="tag is-dark">4</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-light">agile</span>
-                    <span class="tag is-dark">4</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-danger">aws</span>
-                    <span class="tag is-dark">3</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-light">azure</span>
-                    <span class="tag is-dark">2</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-info">orm</span>
-                    <span class="tag is-dark">5</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-success">unittest</span>
-                    <span class="tag is-dark">4</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-danger">tdd</span>
-                    <span class="tag is-dark">4</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-light">oop</span>
-                    <span class="tag is-dark">4</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-success">design patterns</span>
-                    <span class="tag is-dark">4</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-warning">pep8</span>
-                    <span class="tag is-dark">4</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-info">devops</span>
-                    <span class="tag is-dark">2</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-sucess">gtm</span>
-                    <span class="tag is-dark">3</span>
-                  </div>
-                </div>
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-warning">communication</span>
-                    <span class="tag is-dark">4</span>
-                  </div>
-                </div>               
-
-                <div class="control">
-                  <div class="tags has-addons">
-                    <span class="tag is-danger">skill</span>
-                    <span class="tag is-light">level</span>
-                  </div>
-                </div>
-
-
-
-              </div>
-
-            </div>
-          </div>
-
-          <div class="section-social">
-            <ul>
-              <li><a href="https://twitter.com/yippeeEd"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="https://github.com/eduarde"><i class="fab fa-github"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/erja-eduard-0b83349b/"><i class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li><a href="mailto:eduard.erja@gmail.com"><i class="fas fa-envelope"></i></a></li>
-              <li><a href="https://www.instagram.com/erjaeduard"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="https://www.strava.com/athletes/21259440"><i class="fab fa-strava"></i></a></li>
-            </ul>
-          </div>
-
-          <div class="logo"><img src="images/logo/romb_2.png" alt="ed"></div>
-          
-        </div>
-      </div>
-    </section>
-
-  </main>
+  <div class="flex flex-col items-center justify-center min-h-screen">
+    <h1 class="text-4xl font-bold mb-4 title">Hi, I'm Eduard</h1>
+    <p class="text-gray-500 text-lg mb-8 paragraph">I'm a software developer based in Brașov, Romania, ready to be your next
+      trusted partner for tech work.</p>
+    <div class="flex space-x-4 mb-8">
+      <a href="https://www.linkedin.com/in/erja-eduard-0b83349b/" class="text-gray-500 hover:text-gray-700"><i
+          class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://www.instagram.com/erjaeduard" class="text-gray-500 hover:text-gray-700"><i
+          class="fab fa-instagram fa-2x"></i></a>
+      <a href="https://github.com/eduarde" class="text-gray-500 hover:text-gray-700"><i
+          class="fab fa-github fa-2x"></i></a>
+    </div>
+  </div>
 </body>
 
 </html>
