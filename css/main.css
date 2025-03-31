@@ -45,7 +45,7 @@
 .arrow-container {
     position: absolute;
     left: 50%;
-    bottom: 60px; /* Adjust as needed */
+    bottom: 60px; /* Adjust as needed for larger screens */
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
@@ -152,7 +152,7 @@
     }
 
     .arrow-container {
-        bottom: 40px; /* Adjust bottom spacing on mobile */
+        bottom: 100px; /* Increased bottom spacing to move the arrow up */
     }
 
     .chevron {
@@ -178,21 +178,4 @@
         }
     }
 
-    @keyframes move-chevron {
-        25% {
-            opacity: 1;
-        }
-        33.3% {
-            opacity: 1;
-            transform: translateY(0.7rem);
-        }
-        66.6% {
-            opacity: 1;
-            transform: translateY(1.2rem);
-        }
-        100% {
-            opacity: 0;
-            transform: translateY(2rem) scale(0.6);
-        }
-    }
 }
