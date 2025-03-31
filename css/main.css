@@ -137,7 +137,7 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .arrow-container {
-        bottom: 200px; /* Reduced bottom spacing to move the arrow up significantly */
+        bottom: 150px; /* Reduced bottom spacing to move the arrow up significantly */
     }
 
     .title {
