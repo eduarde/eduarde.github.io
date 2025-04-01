@@ -87,7 +87,7 @@
     top: 0;
     height: 100%;
     width: 50%;
-    background: #a855f7; /* Purple */
+    background: #7866ff; /* Purple */
 }
 
 .chevron:before {
@@ -99,7 +99,7 @@
     right: 0;
     width: 50%;
     transform: skewY(-30deg);
-    background: #9333ea; /* Darker purple */
+    background: #7866ff; /* Darker purple */
 }
 
 @-webkit-keyframes move-chevron {
