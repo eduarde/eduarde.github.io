@@ -32,66 +32,129 @@
       style="display:none;visibility:hidden"></iframe>
   </noscript>
 
-  <!-- SECTION HOME -->
-  <section id="home" class="bg-gray-100 min-h-screen flex items-center justify-center relative">
-    <div class="container mx-auto text-center w-2/3">
+  <!-- Section Navigation Indicator -->
+  <div class="section-nav-indicator">
+    <div class="nav-dot active" onclick="scrollToSection('home')" title="Home"></div>
+    <div class="nav-dot" onclick="scrollToSection('about')" title="About"></div>
+    <div class="nav-dot" onclick="scrollToSection('skills')" title="Skills"></div>
+    <div class="nav-dot" onclick="scrollToSection('projects')" title="Projects"></div>
+  </div>
 
-      <img src="images/bear.png" class="mb-4 w-32 h-32 object-contain mx-auto">
-      <h1 class="text-3xl font-bold text-gray-800 mb-6 title">Hi, I'm Eduard</h1>
-      <p class="text-gray-500 text-lg mb-8 paragraph">
+  <!-- SECTION HOME -->
+  <section id="home" class="bg-gray-100">
+    <div class="container mx-auto text-center">
+
+      <img src="images/bear.png" class="mb-8 w-32 h-32 md:w-40 md:h-40 object-contain mx-auto" alt="Eduard's avatar">
+      <h1 class="title">Hi, I'm Eduard</h1>
+      <p class="paragraph">
         I am a Senior Software Developer based in Brașov, Romania, ready to be your trusted tech partner.
       </p>
 
       <!-- social icons -->
-      <div class="flex justify-center space-x-4 mb-8">
-        <a href="https://www.linkedin.com/in/erja-eduard-0b83349b/" class="text-gray-500 hover:text-gray-700"><i
-            class="fab fa-linkedin fa-2x"></i></a>
-        <a href="https://linktr.ee/eduarderja" class="text-gray-500 hover:text-gray-700"><i
-            class="fas fa-link fa-2x"></i></a>
-        <a href="https://github.com/eduarde" class="text-gray-500 hover:text-gray-700"><i
-            class="fab fa-github fa-2x"></i></a>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/erja-eduard-0b83349b/" aria-label="LinkedIn Profile">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://linktr.ee/eduarderja" aria-label="Linktree">
+          <i class="fas fa-link fa-2x"></i>
+        </a>
+        <a href="https://github.com/eduarde" aria-label="GitHub Profile">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
       </div>
 
-      <!-- arrow scroll -->
-      <div class="arrow-container" onclick="scrollToSection('about')">
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
+
+    </div>
+  </section>
+
+  <!-- SECTION ABOUT ME -->
+  <section id="about" class="bg-white-100">
+    <div class="container mx-auto text-center">
+
+      <h2 class="subtitle">:about</h2>
+      <div class="max-w-4xl mx-auto">
+        <p class="paragraph">
+          Driven by over a decade of experience as a Senior Software Developer, 
+          I'm passionate about crafting innovative and scalable web applications, with Python as a key skill.
+          While my core expertise lies in building robust web solutions,
+          I've also ventured into data analysis, bringing a broader perspective to problem-solving.
+          I excel at navigating complex challenges and delivering impactful results through agile methodologies.
+          Collaboration and building strong professional relationships are of great importance to me.   
+        </p>
+        <p class="paragraph">
+          Beyond the world of code, my true passion is cycling.
+          Constantly seeking new routes, I'm drawn by the chance to immerse myself in nature and
+          find a deep connection with myself, far from the digital noise. 
+          I believe this dedicated time in nature, free from distractions,
+          provides invaluable mental clarity that significantly sharpens my focus and fuels
+          my problem-solving abilities when I'm back at my desk.
+        </p>
       </div>
+
 
     </div>
   </section>
 
 
 
-  <!-- SECTION ABOUT ME -->
-  <section id="about" class="bg-white-100 min-h-screen flex items-center justify-center relative">
+  <!-- SECTION skills -->
+  <section id="skills" class="bg-gray-100 min-h-screen flex items-center justify-center relative">
     <div class="container mx-auto text-center w-2/3">
 
-      <h2 class="text-3xl font-bold text-gray-800 mb-6 subtitle">:about</h2>
-      <p class="text-gray-500 text-lg mb-8 paragraph">
-        Driven by over a decade of experience as a Senior Software Developer, 
-        I'm passionate about crafting innovative and scalable web applications, with Python as a key skill.
-        While my core expertise lies in building robust web solutions,
-        I've also ventured into data analysis, bringing a broader perspective to problem-solving.
-        I excel at navigating complex challenges and delivering impactful results through agile methodologies.
-        Collaboration and building strong professional relationships are of great importance to me.   
-      </p>
-      <p class="text-gray-500 text-lg mb-8 paragraph">
-        Beyond the world of code, my true passion is cycling.
-        Constantly seeking new routes, I'm drawn by the chance to immerse myself in nature and
-        find a deep connection with myself, far from the digital noise. 
-        I believe this dedicated time in nature, free from distractions,
-        provides invaluable mental clarity that significantly sharpens my focus and fuels
-        my problem-solving abilities when I'm back at my desk.
-      </p>
+      <h2 class="text-3xl font-bold mb-6 subtitle" style="color: #d1d5db;">:skills</h2>
+      <!-- <p class="text-gray-500 text-lg mb-8 paragraph">
+        Here are some of my achievements and certifications.
+      </p> -->
+ 
+      <div class="flex flex-wrap justify-center gap-2 text-center w-2/3 mx-auto">
 
-      <!-- arrow scroll -->
-      <div class="arrow-container" onclick="scrollToSection('projects')">
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
+        <span class="bg-green-500 text-white px-3 py-1 text-sm">Python</span>
+        <span class="bg-blue-500 text-white px-3 py-1 text-sm">Django</span>
+        <span class="bg-yellow-500 text-white px-3 py-1 text-sm">Django Rest Framework</span>
+        <span class="bg-red-500 text-white px-3 py-1 text-sm">FastAPI</span>
+        <span class="bg-purple-500 text-white px-3 py-1 text-sm">Pandas</span>
+        <span class="bg-pink-500 text-white px-3 py-1 text-sm">Docker</span>
+        <span class="bg-indigo-500 text-white px-3 py-1 text-sm">SQL</span>
+        <span class="bg-red-500 text-white px-3 py-1 text-sm">AWS</span>
+        <span class="bg-purple-500 text-white px-3 py-1 text-sm">RabbitMQ</span>
+        <span class="bg-blue-500 text-white px-3 py-1 text-sm">Kubernetes</span>
+        <span class="bg-green-500 text-white px-3 py-1 text-sm">Celery</span>
+        <span class="bg-red-500 text-white px-3 py-1 text-sm">GraphQL</span>
+        <span class="bg-pink-500 text-white px-3 py-1 text-sm">NoSQL</span>
+        <span class="bg-blue-500 text-white px-3 py-1 text-sm">HTML5</span>
+        <span class="bg-purple-500 text-white px-3 py-1 text-sm">CSS/SCSS</span>
+        <span class="bg-yellow-500 text-white px-3 py-1 text-sm">JS</span>
+        <span class="bg-green-500 text-white px-3 py-1 text-sm">JQuery</span>
+        <span class="bg-blue-500 text-white px-3 py-1 text-sm">Azure</span>
+        <span class="bg-pink-500 text-white px-3 py-1 text-sm">Git</span>
+        <span class="bg-yellow-500 text-white px-3 py-1 text-sm">Agile</span>
+        <span class="bg-blue-500 text-white px-3 py-1 text-sm">AI/LLMS</span>
+    </div>
+
+    <br/>
+    <hr>
+    <br/>
+
+    <div class="flex flex-wrap justify-center gap-2 text-center w-2/3 mx-auto">
+
+      <span class="bg-indigo-500 text-white px-3 py-1 text-sm">Startup Development</span>
+      <span class="bg-purple-500 text-white px-3 py-1 text-sm">Brand Development</span>
+      <span class="bg-green-500 text-white px-3 py-1 text-sm">Start-up Leadership</span>
+      <span class="bg-red-500 text-white px-3 py-1 text-sm">Branding & Identity</span>
+      <span class="bg-blue-500 text-white px-3 py-1 text-sm">Social Media</span>
+      <span class="bg-yellow-500 text-white px-3 py-1 text-sm">Content Management</span>
+      <span class="bg-pink-500 text-white px-3 py-1 text-sm">Graphic & Visual Design</span>
+      <span class="bg-red-500 text-white px-3 py-1 text-sm">Product Design</span>
+      <span class="bg-pink-500 text-white px-3 py-1 text-sm">Brand Awareness</span>
+    
+
+      <div class="w-full flex justify-center mt-4">
+        <a href="https://brunocycling.com" target="_blank">
+          <img src="images/logo/logo_bruno.png" alt="Bruno Cycling" class="w-16 h-16 object-contain">
+        </a>
       </div>
+      
+  </div>
 
     </div>
   </section>
@@ -121,44 +184,72 @@
         <img src="images/projects/revsquare.png" alt="Revsquare"  class="w-24 md:w-28 lg:w-32 object-cover rounded-md grayscale">
       </div>
 
-
-      <!-- arrow scroll -->
-      <!-- <div class="arrow-container" onclick="scrollToSection('testimonials')">
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-      </div> -->
-
     </div>
   </section>
 
-  <!-- SECTION TESTIMONIALS -->
-  <!-- <section id="testimonials" class="bg-gray-100 min-h-screen flex items-center justify-center relative">
-    <div class="container mx-auto text-center text-white w-2/3">
 
-      <h2 class="text-3xl font-bold mb-6 subtitle">:testimonials</h2>
-      <p class="text-lg mb-8 paragraph">
-        work in progress
-      </p>
-
-
-    
-      <div class="arrow-container" onclick="scrollToSection('home')">
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-      </div>
-    </div>
-
-  </section> -->
 
   <script>
     function scrollToSection(id) {
       const element = document.getElementById(id);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
+        updateActiveNavDot(id);
       }
     }
+
+    function updateActiveNavDot(activeSectionId) {
+      // Remove active class from all nav dots
+      document.querySelectorAll('.nav-dot').forEach(dot => {
+        dot.classList.remove('active');
+      });
+      
+      // Add active class to corresponding nav dot
+      const navDots = document.querySelectorAll('.nav-dot');
+      const sections = ['home', 'about', 'skills', 'projects'];
+      const activeIndex = sections.indexOf(activeSectionId);
+      
+      if (activeIndex !== -1 && navDots[activeIndex]) {
+        navDots[activeIndex].classList.add('active');
+      }
+    }
+
+    // Update active nav dot on scroll
+    function updateNavOnScroll() {
+      const sections = ['home', 'about', 'skills', 'projects'];
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+      sections.forEach((sectionId, index) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          const sectionTop = section.offsetTop;
+          const sectionBottom = sectionTop + section.offsetHeight;
+          
+          if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+            updateActiveNavDot(sectionId);
+          }
+        }
+      });
+    }
+
+    // Add keyboard navigation for arrow containers
+    document.addEventListener('DOMContentLoaded', function() {
+      const arrowContainers = document.querySelectorAll('.arrow-container');
+      arrowContainers.forEach(container => {
+        container.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.click();
+          }
+        });
+      });
+
+      // Add scroll event listener
+      window.addEventListener('scroll', updateNavOnScroll);
+      
+      // Initialize active nav dot
+      updateNavOnScroll();
+    });
   </script>
 
   <!--Start of Tawk.to Script-->
